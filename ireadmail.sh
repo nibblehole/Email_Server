@@ -12,7 +12,7 @@ sudo hostnamectl set-hostname $HOSTNAME --static
 sudo hostnamectl set-hostname $HOSTNAME --transient
 echo "Enter your IP"
 read ip
-sudo echo ' $ip    $HOSTNAME '  >>  /etc/hosts
+sudo echo " $ip    $HOSTNAME "  >>  /etc/hosts
 
 sudo yum -y install bind-utils
 host $HOSTNAME
